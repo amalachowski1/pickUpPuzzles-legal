@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Game Title] - Official Site</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card-bg: #1a1d26;
+      --accent: #4f46e5;
+      --accent-hover: #4338ca;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --border: #2d3748;
+      --max-width: 860px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 20px 16px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+      margin-bottom: 30px;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 30px 10px;
+      background: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      margin-bottom: 30px;
+    }
+
+    .game-icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 22px;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      object-fit: cover;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .hero p.tagline {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .btn:hover {
+      background: var(--accent-hover);
+    }
+
+    /* Content Cards */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--text-muted);
+    }
+
+    /* Media: Images & Video */
+    .media-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .media-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      display: block;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-top: 14px;
+      background: #000;
+    }
+
+    .video-container iframe,
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Legal Sections */
+    .legal-content {
+      font-size: 0.9rem;
+      max-height: 250px;
+      overflow-y: auto;
+      padding-right: 8px;
+    }
+
+    .legal-content h3 {
+      font-size: 1rem;
+      margin: 12px 0 6px;
+      color: var(--text);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Quick Nav -->
+    <nav>
+      <a href="#about">About</a>
+      <a href="#media">Media</a>
+      <a href="#contact">Support</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+      <!-- PLACEHOLDER: Replace src with your icon file (e.g. icon.png) -->
+      <img src="https://via.placeholder.com/120" alt="Game Icon" class="game-icon" />
+      <h1>[Your Game Title]</h1>
+      <p class="tagline">[A short, catchy one-line description of your game]</p>
+      
+      <!-- Link directly to your Play Store listing once live -->
+      <a href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME" class="btn" target="_blank" rel="noopener">
+        Get it on Google Play
+      </a>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="card">
+      <h2>About the Game</h2>
+      <p>
+        [Write a paragraph or two introducing your game. Describe key features, gameplay mechanics, and what players can expect.]
+      </p>
+      <p>
+        [Mention compatibility, offline play support, or genre tags here.]
+      </p>
+    </section>
+
+    <!-- MEDIA SECTION: Screenshots & Video -->
+    <section id="media" class="card">
+      <h2>Screenshots & Trailer</h2>
+      
+      <!-- Video Embed (YouTube example; replace VIDEO_ID or remove if not ready) -->
+      <div class="video-container">
+        <!-- Replace 'dQw4w9WgXcQ' with your YouTube video ID -->
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      </div>
+
+      <!-- Screenshot Gallery (add as many <img> tags as you want) -->
+      <div class="media-gallery">
+        <img src="https://via.placeholder.com/600x350" alt="Screenshot 1" />
+        <img src="https://via.placeholder.com/600x350" alt="Screenshot 2" />
+      </div>
+    </section>
+
+    <!-- SUPPORT / CONTACT SECTION -->
+    <section id="contact" class="card">
+      <h2>Contact & Support</h2>
+      <p>If you encounter bugs, have suggestions, or need support, reach out to us at:</p>
+      <p><strong>Email:</strong> <a href="mailto:your-email@example.com" style="color: var(--accent);">your-email@example.com</a></p>
+    </section>
+
+    <!-- PRIVACY POLICY (Target for Google Play: yoursite.github.io/#privacy) -->
+    <section id="privacy" class="card">
+      <h2>Privacy Policy</h2>
+      <div class="legal-content">
+        <p><strong>Last updated:</strong> [Date]</p>
+        <p>[Your Developer/Company Name] built [Your Game Title] as a [Free / Ad-supported / Paid] game. This service is provided by [Your Name] at no cost and is intended for use as is.</p>
+        
+        <h3>Information Collection and Use</h3>
+        <p>[Explain what data you collect, e.g., "This app does not collect or transmit any personally identifiable information." OR list SDKs like Unity Analytics, AdMob, Firebase if applicable].</p>
+
+        <h3>Third-Party Services</h3>
+        <p>[If you use Google Play Services, AdMob, or Unity Ads, mention them here and provide links to their privacy policies].</p>
+
+        <h3>Children’s Privacy</h3>
+        <p>[State whether your app targets children under 13 and complies with COPPA].</p>
+
+        <h3>Contact Us</h3>
+        <p>If you have any questions regarding privacy, please contact: <a href="mailto:your-email@example.com" style="color: var(--accent);">your-email@example.com</a></p>
+      </div>
+    </section>
+
+    <!-- TERMS OF SERVICE -->
+    <section id="terms" class="card">
+      <h2>Terms of Service</h2>
+      <div class="legal-content">
+        <p><strong>Last updated:</strong> [Date]</p>
+        <p>By downloading or using [Your Game Title], these terms will automatically apply to you. You should make sure that you read them carefully before using the game.</p>
+        
+        <h3>Usage License</h3>
+        <p>[Grant a limited, personal, non-transferable license to use the app].</p>
+
+        <h3>Modifications and Termination</h3>
+        <p>We reserve the right to modify or discontinue the game (or any part thereof) at any time without notice.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; [Year] [Your Name/Studio]. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
